@@ -27,6 +27,13 @@ body {
   width: 190px;
   height: 250px;
   border: 2px solid #333;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.panel img:hover {
+  border: 2px solid lightgrey;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 .panel p {
   font-family: 'Muli', sans-serif;
