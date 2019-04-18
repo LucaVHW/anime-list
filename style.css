@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container {
+  background-color: rgba(54,54,54,0.7);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+}
+.panel {
+  width: 195px;
+  height: 310px;
+  text-align: center;
+  background-color: rgba(48,132,205,0.7);
+  padding: 5px;
+  display: grid;
+  justify-content: center;
+}
+.panel img {
+  width: 190px;
+  height: 250px;
+  border: 2px solid #333;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.panel img:hover {
+  border: 2px solid lightgrey;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.panel p {
+  font-family: 'Muli', sans-serif;
+  color: lavender;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  bottom: 10px;
+}
+.navbar {
+  font-family: sans-serif;
+  font-family: 'Muli', sans-serif;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
+
+/* Slideshow animation */
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1s ease;
+}
+
+.active {
+  background-color: #bbb;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.slide img {
+  width: 500px;
+  height: 300px;
+  border: 3px solid lavender;
+}
