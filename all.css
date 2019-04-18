@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 5px;
+  padding: 10px;
 }
 .panel {
   width: 195px;
